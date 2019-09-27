@@ -1,24 +1,40 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>English intermediate test sample</title>
-    </head>
-    <body>
-        <header>
-            <h1>English intermediate test sample</h1>
-        </header>
-        <article>
-            <h2>Communication and Grammar block</h2>
-            <form>
-                <h3>Fill in your personal information:</h3>
-                First Name: <input type="text" name="firstName" value="First Name">
-                Last Name: <input type="text" name="lastName" value="Last Name">
-                Birthday: <input type="date" name="birthday"><br>
-                Gender: <br><input type="radio" name="gender" value="male">Male<br>
-                <input type="radio" name="gender" value="female">Female<br>
-                <input type="radio" name="gender" value="other">Other<br>
-                E-mail:  <input type="email" name="email" value="e-mail">
+
+<head>
+	<meta charset="utf-8">
+	<title>English intermediate test sample</title>
+</head>
+
+<body>
+	<header>
+		<h1>English intermediate test sample</h1>
+	</header>
+	<nav>
+		<a href="index.html">Home</a>
+	</nav>
+	<article>
+		<h2>Communication and Grammar block</h2>
+		<form method="POST" action="https://formspree.io/edglock@gmail.com">
+			<h3>Fill in your personal information:</h3>
+			<label for="firstName"> First Name: </label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                <label for="birthday">Birthday: </label>
+                <input type="date" name="birthday" id="birthday"><br>
+                <label>Gender: </label><br>
+                <label>
+                    <input type="radio" name="gender" value="male">Male<br>
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female">Female<br>
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="other">Other<br>
+                </label>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="e-mail">
                 Your English level: <select name="englishLevel">
                     <option value="starter">Starter</option>
                     <option value="elementary">Elementary</option>
@@ -27,6 +43,47 @@
                     <option value="upper-intermediate">Upper-intermediate</option>
                     <option value="advanced">Advanced</option>
                 </select>
+                <h3>Task 1</h3>
+                <p>Choose the correct option</p>
+                <p>1. Do you ever read reviews on Rotten Tomatoes? I do. But you know… It's __________ easier to write why something is terrible than why it's good.</p>
+                <label>
+                    <input type="radio" name="task-1.1" value="by far">by far<br>
+                </label>
+                <label>
+                    <input type="radio" name="task-1.1" value="far">far<br>
+                </label>
+                <label>
+                    <input type="radio" name="task-1.1" value="further">further<br>
+                </label>
+                <p>2. I wish I __________ a bike - then I would definitely join your cycling club! There are so many cute guys :)</p>
+                <label>
+                    <input type="radio" name="task-1.2" value="have">have<br>
+                </label>
+                <label>
+                    <input type="radio" name="task-1.2" value="had">had<br>
+                </label>
+                <label>
+                    <input type="radio" name="task-1.2" value="had had">had had
+                </label>
+                <h3>Task 2</h3>
+                <p>Choose the correct option</p>
+                <p>1. My doctor has told me to stop eating meat …. But it is impossible! I guess you can’t teach an old </p>
+                <select name="task-2.1">
+                    <option value="dog">dog</option>
+                    <option value="bull">bull</option>
+                    <option value="person">person</option>
+                    <option value="girl">girl</option>
+                </select>
+                <p>new tricks…</p>
+                <p>2. My skin was sunburnt and it hurt a lot, so eventually I applied some</p>
+                <select name="task-2.2">
+                    <option value="band-aid">band-aid</option>
+                    <option value="tablet">tablet</option>
+                    <option value="pil">pil</option>
+                    <option value="ointment">ointment</option>
+                </select>
+                <p>all over my body.</p>
+                <input type="submit" value="Submit">
             </form>
         </article>
     </body>
